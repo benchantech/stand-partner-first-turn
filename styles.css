@@ -41,8 +41,8 @@ main,.site-footer{max-width:var(--max);margin:0 auto}
 .hero{display:grid;gap:26px;padding-top:42px}
 .kicker,.section-number,.eyebrow,.step,.meta-line,.fine-print,figcaption,.tag{font:700 .72rem/1.35 var(--sans);letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
 h1,h2,h3{font-family:var(--serif);font-weight:700;line-height:1.04;letter-spacing:0;margin:0;color:var(--ink)}
-h1{font-size:clamp(2.35rem,11vw,5.25rem);max-width:13ch}
-h2{font-size:clamp(1.75rem,7vw,3rem);max-width:15ch}
+h1{font-size:clamp(2rem,7vw,3.9rem);max-width:14ch}
+h2{font-size:clamp(1.45rem,5vw,2.35rem);max-width:18ch}
 h3{font-size:1.35rem;margin-top:18px}
 .lede{font:400 1.12rem/1.5 var(--sans);max-width:38rem;margin:18px 0 0;color:var(--ink)}
 .copy,.helper,.panel,.notice,.note{font:400 .98rem/1.6 var(--sans);color:var(--muted);max-width:42rem}

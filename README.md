@@ -8,7 +8,8 @@ It gives a visitor one deterministic route into a selected YouTube clip or teach
 
 ## What this MVP does
 
-- Mobile-first static router.
+- Mobile-first static homepage plus a dedicated Stand Partner router page.
+- Archive, privacy, and terms pages as static documents.
 - Optional 4-step orientation: entry point, level, immediate need, available time.
 - One primary recommendation, with optional YouTube start timestamps once real destinations are attached.
 - “This helped,” “Not my issue,” and “Turn again” paths.
@@ -28,6 +29,7 @@ It gives a visitor one deterministic route into a selected YouTube clip or teach
 2. Add a real YouTube `videoId` to each route before treating it as a published destination.
 3. Start with 10–20 routes, not the full archive.
 4. Open `tools/clip-builder.html` locally, generate a record, inspect it, then paste it into `ROUTES` manually.
+5. Replace the placeholder image slots with authentic Ben Chan teaching stills, score/stand details, or archive screenshots.
 
 ## GitHub Pages
 

@@ -202,6 +202,21 @@ main,
   margin-inline: auto;
 }
 
+.text-page main {
+  width: min(100% - (var(--mobile-gutter) * 2), var(--reading-max));
+  margin-inline: auto;
+}
+
+.text-page h1 {
+  font-size: clamp(2rem, 6vw, 3.25rem);
+  line-height: 1.02;
+  max-width: 15ch;
+}
+
+.text-page h3 {
+  margin-top: var(--space-6);
+}
+
 .section {
   padding-block: var(--space-9);
   border-top: 1px solid var(--rule);
@@ -783,6 +798,11 @@ input[type="email"]:focus {
   margin-top: var(--space-6);
 }
 
+.footer-cta {
+  width: 100%;
+  max-width: 390px;
+}
+
 .footer-links a {
   min-height: 44px;
   display: inline-flex;
@@ -897,7 +917,8 @@ dialog {
   }
 
   .reading-shell,
-  .stand-page main {
+  .stand-page main,
+  .text-page main {
     width: min(100% - (var(--desktop-gutter) * 2), var(--reading-max));
   }
 

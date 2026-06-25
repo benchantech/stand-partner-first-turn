@@ -615,6 +615,60 @@ input[type="email"]:focus {
   color: var(--paper-raised);
 }
 
+.media-slot img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border: 1px solid var(--rule-strong);
+  border-radius: var(--radius-panel);
+}
+
+.image-carousel {
+  position: relative;
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+  border: 1px solid var(--rule-strong);
+  border-radius: var(--radius-panel);
+  background: #17191C;
+}
+
+.image-carousel img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  border-radius: 0;
+  object-fit: cover;
+  opacity: 0;
+  animation: carousel-fade 9s var(--ease-standard) infinite;
+}
+
+.image-carousel img:nth-child(2) {
+  animation-delay: 3s;
+}
+
+.image-carousel img:nth-child(3) {
+  animation-delay: 6s;
+}
+
+@keyframes carousel-fade {
+  0%,
+  5% {
+    opacity: 0;
+  }
+
+  11%,
+  33% {
+    opacity: 1;
+  }
+
+  39%,
+  100% {
+    opacity: 0;
+  }
+}
+
 .media-slot span {
   display: block;
   font-family: var(--font-ui);
@@ -632,8 +686,10 @@ input[type="email"]:focus {
 
 .media-slot figcaption {
   margin-top: var(--space-3);
-  max-width: 46ch;
+  width: 100%;
+  max-width: none;
   color: var(--muted);
+  text-align: center;
   text-transform: none;
   letter-spacing: 0;
   font-weight: 500;
@@ -909,5 +965,14 @@ dialog {
     animation-iteration-count: 1 !important;
     scroll-behavior: auto !important;
     transition-duration: 0.01ms !important;
+  }
+
+  .image-carousel img {
+    animation: none !important;
+    opacity: 0;
+  }
+
+  .image-carousel img:first-child {
+    opacity: 1;
   }
 }

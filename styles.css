@@ -604,6 +604,50 @@ input[type="email"]:focus {
   gap: var(--space-7);
 }
 
+.home-page .site-header {
+  position: static;
+  min-height: 56px;
+}
+
+.home-page main,
+.home-page .site-footer {
+  width: min(100% - (var(--mobile-gutter) * 2), var(--reading-max));
+}
+
+.home-page .section {
+  padding-block: var(--space-5) var(--space-6);
+}
+
+.home-page .hero {
+  gap: var(--space-5);
+}
+
+.home-page h1 {
+  font-size: clamp(2.25rem, 10vw, 3.5rem);
+}
+
+.home-page .actions {
+  margin-top: var(--space-4);
+}
+
+.home-page .note {
+  margin-top: var(--space-4);
+}
+
+.home-page .site-footer {
+  padding-block: var(--space-6) var(--space-7);
+}
+
+.home-page .site-footer h2 {
+  font-family: var(--font-ui);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.11em;
+  line-height: 1.25;
+  text-transform: uppercase;
+  color: var(--rust);
+}
+
 .hero .lede,
 .stand-intro .lede {
   margin-top: var(--space-5);
